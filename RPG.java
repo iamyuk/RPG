@@ -9,7 +9,7 @@ public class RPG {
     b.introduce();
     c.introduce();
     b.attack(a);
-    c.attac(b);
+    c.attack(b);
     a.attack(c);
   }
 }
