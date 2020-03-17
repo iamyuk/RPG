@@ -8,5 +8,8 @@ public class RPG {
     a.introduce();
     b.introduce();
     c.introduce();
+    b.attack(a);
+    c.attac(b);
+    a.attack(c);
   }
 }
