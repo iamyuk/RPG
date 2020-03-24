@@ -1,14 +1,20 @@
 package homeworks;
 
 public class Character {
-  private int hp;
-  private int mp;
-  private String name;
+  protected int hp;
+  protected int mp;
+  public String name;
 
   public Character(int hp, int mp, String name) {
     this.hp = hp;
     this.mp = mp;
     this.name = name;
+  }
+
+  Character() {
+    hp = 100;
+    mp = 100;
+    name = "クロちゃん";
   }
 
   public void introduce() {
@@ -21,7 +27,7 @@ public class Character {
   }
 
   public void attack(Character target) {
-    System.out.println(name+"の攻撃！");
+    System.out.println(name + "のこうげき！");
     target.damage(10);
   }
 }
