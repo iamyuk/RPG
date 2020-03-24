@@ -1,15 +1,15 @@
 package homeworks;
 
 public class RPG {
-  public static void main(String[] args) {
-    Character a = new Character(100, 100, "ポチ");
-    Character b = new Character(80, 120, "モカ");
-    Character c = new Character(150, 100, "クロちゃん");
-    a.introduce();
-    b.introduce();
-    c.introduce();
-    b.attack(a);
-    c.attack(b);
-    a.attack(c);
-  }
+	public static void main(String[] args) {
+		Character a = new Character();
+	    Dog b = new Dog();
+	    Character c = new Cat();
+	    a.introduce();
+	    b.introduce();
+	    c.introduce();
+	    a.attack(b);
+	    b.attack(c);
+	    c.attack(a);
+	  }
 }
