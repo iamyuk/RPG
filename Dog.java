@@ -3,7 +3,7 @@ package homeworks;
 public class Dog extends Character {
   int power;
 
-  Dog() {
+  public Dog() {
     this.hp = 200;
     this.mp = 200;
     this.name = "モカ";
